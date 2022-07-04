@@ -1,0 +1,32 @@
+#title{
+margin-top: 85px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 45px;
+}
+
+#color-palette{
+    height: 90px;
+    display: flex;
+    margin-top: 85px;
+}
+
+.color{
+    width: 80px;
+    min-height: 80px;
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid;
+    
+}
+#color01{
+    background-color: black;
+}
+#color02{
+    background-color: rgb(218, 245, 13);
+}
+#color03{
+    background-color: rgb(20, 243, 235);
+}
+#color04{
+    background-color: rgb(135, 60, 160);
+}
