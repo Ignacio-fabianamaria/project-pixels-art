@@ -28,16 +28,17 @@ body {
 }
 
 #color-palette {
-    height: 80px;
+    height: 800px;
     display: flex;
 }
 
 .color {
-    width: 80px;
-    min-height: 80px;
+    width: 50px;
+    height: 50px;
     display: inline-block;
     margin-right: 10px;
     border: 1px solid;
+
 
 }
 
@@ -59,21 +60,19 @@ body {
 
 .pixel {
     background-color: white;
-    border-radius: 1px;
-    height: 40px;
-    width: 40px;
+    border-radius: 2px;
 }
 
 #pixel-board {
     --size:5;
-    margin-top: 20px;
-    height: 213px;
+    margin-top: 10px;
+    height:800px;
+    width: 800px;
     display: grid;
     grid-template-columns: repeat(var(--size),1fr);
     grid-template-rows: repeat(var(--size),1fr);
-    width: 213px;
-    padding: 3px;
-    flex-direction: column;
-    border: solid 1px;
     background-color:black;
+    border-radius: 2px;
+    display:flex;
+    
 }

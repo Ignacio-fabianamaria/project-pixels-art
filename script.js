@@ -1,4 +1,4 @@
-const container=document.querySelector('#pixel-board');
+const container=document.getElementById('pixel-board');
 
 function pixelArt(size){
     container.style.setProperty('--size',size)
@@ -8,4 +8,4 @@ function pixelArt(size){
         container.appendChild(div)
     }
 }
-pixelArt(25)
+pixelArt(0);
