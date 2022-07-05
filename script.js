@@ -1,3 +1,8 @@
+window.onload = function() {
+    const colorBlack=document.getElementById('color01');
+    colorBlack.classList.add('selected');
+}
+
 const container=document.getElementById('pixel-board');
 
 function pixelArt(size){
