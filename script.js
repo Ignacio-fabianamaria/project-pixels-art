@@ -20,83 +20,44 @@ function initialColor(){
     colorSelected=color01;
     colorSelected.classList.add('selected');
 }
+initialColor()
 
+ color01.addEventListener('click', chooseColor) 
+ color02.addEventListener('click', chooseColor) 
+ color03.addEventListener('click', chooseColor) 
+ color04.addEventListener('click', chooseColor) 
 
-
-for( const colorr of color){
-    colorr.addEventListener('click',function(event){
-        for( let colorr of color){
-            colorr.classList.remove('selected');
-        }
-        event.target.classList.add('selected')
-        });
-    }
-
-    function applyColor(){
-        for( const pixel of div){
-            pixel.addEventListener('click',function(event){
-                const chooseColor=document.getElementsByClassName('selected').backgroundColor;
-                event.target.style.backgroundColor=chooseColor;
-            });
+function chooseColor(event){
+    let targetColor=event.target;
+    for(index=0;index< color.length;index+=1){
+        if (color[index].classList.contains('selected')) {
+            color[index].classList.remove('selected')  
         }
     }
+    targetColor.classList.add('selected')
 
-
-
-    
-  
-
-
-
-/*function applyColor(event){
-    chooseColor(paletaCores)
-    let newColor=colorSelected.style.backgroundColor;
-    div.target.style.backgroundColor=newColor;
-    console.log(newColor);
-}*/
-/*function colorSelected(event){
-    for (let x=0;x< paletaCores.children.length;x+=1){
-        if(paletaCores.children[x].classList=='selected')
-        paletaCores.children.classList.remove('selected')
     }
+
     
-    for (let y = 0; y < paletaCores.children.length; y+=1) {
-    paletaCores.children[y].addEventListener('click',function(){
-        event.target.classList.add('selected')
-    })
-          
-    }
+        //for( const pixel of div){
+            
+                //let chooseColor=document.getElementsByClassName('selected');
+                //let chooseColorStyle=chooseColor.style.backgroundColor
+        function applyColor(event) {
+                    let propriedades = getComputedStyle(document.querySelector('.selected')).backgroundColor;
+                    event.target.style.backgroundColor = propriedades;
+                
+            
+        }
     
-}*/
-
-/*color01.addEventListener('click', colorSelected)
-color02.addEventListener('click', colorSelected)
-color03.addEventListener('click', colorSelected)
-color04.addEventListener('click', colorSelected)*/
-
-
 
     for (let i = 0; i < 25; i += 1) {
         const div = document.createElement('div')
         div.classList.add('pixel')
-        div.addEventListener('click',function (applyColor){
-        // div.style.backgroundColor=newColor.style.backgroundColor
-    console.log('clickou');
-})
+        
+
         container.appendChild(div)
     }
-
-
-
-
-
-//for (let x = 0; x < document.getElementsByClassName('pixel').length; x+=1) 
-//{
-  //  const pixelDiv = document.getElementsByClassName('pixel')[x];
-    //pixel.addEventListener('click',applyColor);
-    
-//}
-
 
 function clear() {
     btnClear.addEventListener('click', function () {
@@ -109,12 +70,11 @@ function clear() {
     })
 }
 
-
+container.addEventListener('click',applyColor)
 
 
 
 clear()
-window.onload = initialColor;
+
+
     
-
-
