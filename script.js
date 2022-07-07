@@ -5,12 +5,13 @@ const color02 = document.getElementById('color02');
 const color03 = document.getElementById('color03');
 const color04 = document.getElementById('color04');
 
-const paletaCores = document.querySelectorAll('#color-palette');
+const paletaCores = document.getElementById('#color-palette');
 
 const container = document.getElementById('pixel-board');
 
 const btnClear = document.getElementById('clear-board');
 let  colorSelected;
+let newColor;
 
 
 function initialColor(){
@@ -20,7 +21,7 @@ function initialColor(){
 
 chooseColor(paletaCores);
 
-function chooseColor(paletaCores){
+function chooseColor(){
     color01.addEventListener('click', function () {
         
         color01.classList.add('selected');
@@ -53,14 +54,14 @@ function chooseColor(paletaCores){
     })
 
 }
-/*applyColor(container)
+
 
 function applyColor(event){
     chooseColor(paletaCores)
-    let newColor=getComputedStyle(colorSelected).backgroundColor;
+    let newColor=colorSelected.style.backgroundColor;
     container.target.style.backgroundColor=newColor;
     console.log(newColor);
-}*/
+}
 /*function colorSelected(event){
     for (let x=0;x< paletaCores.children.length;x+=1){
         if(paletaCores.children[x].classList=='selected')
@@ -86,7 +87,8 @@ color04.addEventListener('click', colorSelected)*/
     for (let i = 0; i < 25; i += 1) {
         const div = document.createElement('div')
         div.classList.add('pixel')
-        div.addEventListener('click',function(applyColor){
+        div.addEventListener('click',function(event){
+         div[i].style.backgroundColor=newColor.style.backgroundColor
     console.log('clickou');
 })
         container.appendChild(div)
