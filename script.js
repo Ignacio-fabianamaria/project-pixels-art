@@ -35,7 +35,7 @@ for( const colorr of color){
     function applyColor(){
         for( const pixel of div){
             pixel.addEventListener('click',function(event){
-                const chooseColor=getComputedStyle(document.getElementsByClassName('selected').backgroundColor);
+                const chooseColor=document.getElementsByClassName('selected').backgroundColor;
                 event.target.style.backgroundColor=chooseColor;
             });
         }
