@@ -5,7 +5,7 @@
 
 body {
     background-color: rgb(65, 90, 230);
-    background-image: url(img01.jpg);
+    background-image: url(img03.jpg);
     display: flex;
     justify-content: center;
     align-items:center;
@@ -14,13 +14,15 @@ body {
 }
 
 #title {
-    margin-top: 40px;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 55px;
-    color:black;
+    margin-top: 45px;
+    font-family:monospace;
+    font-size: 70px;
+    color:azure;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    
 }
 
 
@@ -29,15 +31,17 @@ body {
     height: 30px;
     display: flex;
     padding: 2%;
+
     
 }
 
 .color {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     display: inline-block;
     margin-right: 10px;
-    border: 1px solid;
+    border: 1px solid ;
+    border-radius: 50px;
 
 
 }
