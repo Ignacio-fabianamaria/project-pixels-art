@@ -5,17 +5,19 @@
 
 body {
     background-color: rgb(65, 90, 230);
+    background-image: url(img01.jpg);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     flex-direction: column;
+    
 }
 
 #title {
     margin-top: 40px;
     font-family:'Courier New', Courier, monospace;
     font-size: 55px;
-    color: azure;
+    color:black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,9 +26,10 @@ body {
 
 
 #color-palette {
-    height: 200px;
+    height: 30px;
     display: flex;
     padding: 2%;
+    
 }
 
 .color {
@@ -44,15 +47,15 @@ body {
 }
 
 #color02 {
-    background-color: rgb(218, 245, 13);
+    background-color:deeppink;
 }
 
 #color03 {
-    background-color: rgb(20, 243, 235);
+    background-color:aqua;
 }
 
 #color04 {
-    background-color: rgb(135, 60, 160);
+    background-color:mediumpurple;
 }
 
 #clear-board{
@@ -62,6 +65,7 @@ body {
     font-weight: bold;
     font-family:'Courier New', Courier, monospace;
     font-size: 14px;
+    margin-top: 60px;
     margin-bottom: 10px;
     
     
@@ -79,7 +83,8 @@ body {
 }
 
 #pixel-board {
-   --size:5;
+   
+    --size:5;
     width: 210px;
     height: 210px;
     border: solid 1px;
