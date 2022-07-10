@@ -58,27 +58,26 @@ function pixelArt(size) {
 }
 
 function appliedSize(size) {
-    const sizeApp = document.getElementById('board-size').value;
-    if (sizeApp < 5) {
+    const sizeApp = document.getElementById('board-size');
+    const sizeAppValue=sizeApp.value;
+    if (sizeAppValue < 5) {
         pixelArt(5);
-    }else if( sizeApp>5){
+    }else if( sizeAppValue>5){
         pixelArt(50)
     }
 }
-function alert(){
-    
+//appliedSize()
+
+btnVQV.addEventListener('click',function(e){
+    e.preventDefault;
     const inputSize=document.getElementById('board-size');
     const inputValue=inputSize.value;
-    
-btnVQV.addEventListener('click',function(){
-    if (inputSize.value==='' ) {
-        alert('Board inválido!');
-    }if(inputSize.value===0)
+    if (inputSize.value===''  ){
+    alert('Board inválido!')
+    }if(inputSize.value==0)
     alert('Board inválido!');
 })
-}
 
-alert()
 
 function clear() {
     btnClear.addEventListener('click', function () {
