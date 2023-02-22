@@ -68,7 +68,7 @@ function appliedSize(size) {
 }
 //appliedSize()
 
-btnVQV.addEventListener('click',function(e){
+/* btnVQV.addEventListener('click',function(e){
     e.preventDefault;
     const inputSize=document.getElementById('board-size');
     const inputValue=inputSize.value;
@@ -76,7 +76,7 @@ btnVQV.addEventListener('click',function(e){
     alert('Board inválido!')
     }if(inputSize.value==0)
     alert('Board inválido!');
-})
+}) */
 
 
 function clear() {
@@ -95,5 +95,4 @@ container.addEventListener('click', applyColor)
 
 
 clear()
-
 
