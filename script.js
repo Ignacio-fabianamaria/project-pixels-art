@@ -66,18 +66,6 @@ function appliedSize(size) {
         pixelArt(50)
     }
 }
-//appliedSize()
-
-/* btnVQV.addEventListener('click',function(e){
-    e.preventDefault;
-    const inputSize=document.getElementById('board-size');
-    const inputValue=inputSize.value;
-    if (inputSize.value===''  ){
-    alert('Board inválido!')
-    }if(inputSize.value==0)
-    alert('Board inválido!');
-}) */
-
 
 function clear() {
     btnClear.addEventListener('click', function () {
