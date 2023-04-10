@@ -45,7 +45,7 @@ function applyColor(event) {
     event.target.style.backgroundColor = propriedades;
 
 }
-pixelArt(5)
+pixelArt(15)
 
 
 function pixelArt(size) {
